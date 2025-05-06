@@ -31,3 +31,4 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 
 * Example notebook can be found here: [Transformers](notebooks/Transformers.ipynb)
 * Tutorial for pipelines: [from HuggingFace](https://github.com/huggingface/transformers/blob/main/docs/source/en/pipeline_tutorial.md)
+* Find a model: [from HuggingFace](https://huggingface.co/models?pipeline_tag=token-classification&language=en&sort=trending)
