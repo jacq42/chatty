@@ -48,4 +48,18 @@ Source: https://learn.deeplearning.ai/courses/building-ai-voice-agents-for-produ
 - the needed components from live demo need paid plans (openai, deepgram)
 - are there open source alternatives?
 
+- Docs: https://github.com/livekit/agents/blob/6019c43ac6a60bebdb8437aef11e8ef64042b94b/examples/voice-assistant/function_calling.py
 
+Amazon Bedrock:
+- Tutorial: https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html
+- Model Support:
+- Model freigeben: https://eu-central-1.console.aws.amazon.com/bedrock/home?region=eu-central-1#/overview
+- Fehlermeldung:
+```
+livekit.agents._exceptions.APIConnectionError: 
+aws bedrock llm: 
+error generating content: 
+An error occurred (ValidationException) when calling the ConverseStream operation: 
+Invocation of model ID amazon.nova-lite-v1:0 with on-demand throughput isn’t supported. Retry your request with the ID or ARN of an inference profile that contains this model.
+```
+- Lösung: https://repost.aws/questions/QUuisypRIxS5aVwTDznjyeLQ/meta-llama3-2-11b-instruct-v1-0-not-supported-for-on-demand-throughput

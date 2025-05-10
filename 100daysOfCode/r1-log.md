@@ -1,5 +1,13 @@
 # 100 Days Of Code - Round 1
 
+### Day 4: 2025-05-10
+
+**Today's Progress**: Try to find open source alternatives for SST component.
+
+**Thoughts:** Hard to find. It doesn't work out of the box.
+
+**Link to work:** [Jupyter book AI Voice Agent](../docs/learnings/notebooks/DeepLearingAI-Voice-Agent-Lesson4.ipynb) in this repo
+
 ### Day 3: 2025-05-09
 
 **Today's Progress**: AI Voice Agent course from [Deeplearning.ai](https://learn.deeplearning.ai/courses/building-ai-voice-agents-for-production/) 
