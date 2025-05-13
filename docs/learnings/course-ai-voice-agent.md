@@ -62,4 +62,7 @@ error generating content:
 An error occurred (ValidationException) when calling the ConverseStream operation: 
 Invocation of model ID amazon.nova-lite-v1:0 with on-demand throughput isn’t supported. Retry your request with the ID or ARN of an inference profile that contains this model.
 ```
-- Lösung: https://repost.aws/questions/QUuisypRIxS5aVwTDznjyeLQ/meta-llama3-2-11b-instruct-v1-0-not-supported-for-on-demand-throughput
+
+Documentation:
+- Cross-region inference: https://eu-central-1.console.aws.amazon.com/bedrock/home?region=eu-central-1#/inference-profiles
+- AWS STT: https://docs.livekit.io/agents/integrations/stt/aws/

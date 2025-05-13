@@ -1,5 +1,13 @@
 # 100 Days Of Code - Round 1
 
+### Day 5: 2025-05-13
+
+**Today's Progress**: Get the Voice Agent working with AWS Bedrock.
+
+**Thoughts:** Policies are "great".
+
+**Link to work:** [Jupyter book Live Kit Agent Demo](../docs/learnings/notebooks/LiveKitAgentDemo.ipynb) in this repo
+
 ### Day 4: 2025-05-10
 
 **Today's Progress**: Try to find open source alternatives for SST component.
