@@ -1,5 +1,14 @@
 # 100 Days Of Code - Round 1
 
+### Day 6: 2025-05-14
+
+**Today's Progress**: Continue with hugging face course.
+
+**Thoughts:** All new stuff.
+
+**Link to work:** [Course LLM](../docs/learnings/course-llm.md) in this repo
+
+
 ### Day 5: 2025-05-13
 
 **Today's Progress**: Get the Voice Agent working with AWS Bedrock.

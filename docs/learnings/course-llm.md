@@ -49,6 +49,19 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
   * decoder for generating the output
   * examples: translation, summarization, question answering
 
+### Inference
+
+* the process of using a trained model to generate human like text from a given input prompt
+* attention:
+  * is the ability to understand the context and generate coherent text
+  * ability to focus on relevant parts of the input = attention
+  * example: The capital of France is ... 
+  * capital and France are crucial to predict the answer Paris
+* context length = maximum number of tokens the model can consider at once when generating the response
+  * different models are designed with different context lengths to balance capability and efficiency
+* prompting = pass information to models in a structured way
+  * careful design of the prompt makes it easier to guide the generation of the model toward the desired output
+
 * next: https://huggingface.co/learn/llm-course/chapter1/8?fw=pt
 
 * TODO: https://huggingface.co/docs/transformers/tasks/asr
