@@ -1,5 +1,13 @@
 # 100 Days Of Code - Round 1
 
+### Day 7: 2025-05-16
+
+**Today's Progress**: Try to create an agent with [letta](http://letta.com/).
+
+**Thoughts:** New platform, new possibilities, new challenges.
+
+**Link to work:** letta-test repo locally
+
 ### Day 6: 2025-05-14
 
 **Today's Progress**: Continue with hugging face course.
@@ -7,7 +15,6 @@
 **Thoughts:** All new stuff.
 
 **Link to work:** [Course LLM](../docs/learnings/course-llm.md) in this repo
-
 
 ### Day 5: 2025-05-13
 
