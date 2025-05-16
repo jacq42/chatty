@@ -31,3 +31,5 @@ replay_pid*
 
 # Jupiter
 .ipynb_checkpoints/
+/.gradle/
+/build/
