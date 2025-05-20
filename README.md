@@ -21,8 +21,12 @@ Chatty is an english speaking chatbot.
 
 ## Frameworks
 
+* [LlamaIndex](https://docs.llamaindex.ai/en/stable/getting_started/concepts/)
+* [LangChain](https://python.langchain.com/docs/introduction/)
+* [LiveKit](https://docs.livekit.io/home/)
 
 
 ## Links
 
-* Just the article, not the frameworks: [Voice assistant](Voice assistant: https://medium.com/rasa-blog/how-to-build-a-voice-assistant-with-open-source-rasa-and-mozilla-tools-c05c4ec698c6)
+* Just the article, not the outdated(!) frameworks: [Voice assistant](https://medium.com/rasa-blog/how-to-build-a-voice-assistant-with-open-source-rasa-and-mozilla-tools-c05c4ec698c6)
+* Courses at [Cognitive Class](https://courses.cognitiveclass.ai/)
