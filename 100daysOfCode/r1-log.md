@@ -6,7 +6,7 @@
 
 **Thoughts:** I hope I can get some structured information on how to build an AI agents.
 
-**Link to work:** First [course](../docs/learnings/course-ibm-rag.md) completed.
+**Link to work:** Two courses completed. See [RAG IBM courses](../docs/learnings/course-ibm-rag.md)
 
 ### Day 7: 2025-05-16
 
