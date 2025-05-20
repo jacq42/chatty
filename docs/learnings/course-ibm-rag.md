@@ -60,3 +60,20 @@ Lab is done with [LlamaIndex](https://docs.llamaindex.ai/en/stable/)
 
 See [RAG course IBM notebook](notebooks/RAG-course-IBM-LlamaIndex.ipynb)
 
+## Course #3: Granite & LangChain: Utilizing LLM, RAG to Answer Questions
+
+[Cognitive Class course #3](https://apps.cognitiveclass.ai/learning/course/course-v1:IBMSkillsNetwork+GPXX0AOVEN+v1/block-v1:IBMSkillsNetwork+GPXX0AOVEN+v1+type@sequential+block@get_started/block-v1:IBMSkillsNetwork+GPXX0AOVEN+v1+type@vertical+block@lets_do_it)
+Lab is done with [LangChain](https://python.langchain.com/docs/introduction/)
+
+### Course Lab
+
+See [RAG course IBM notebook](notebooks/RAG-course-IBM-question-answering.ipynb)
+
+## Course #4: Build a RAG System for Web Data with LangChain and Llama 3.1
+
+[Cognitive Class course #4](https://apps.cognitiveclass.ai/learning/course/course-v1:IBMSkillsNetwork+GPXX03NIEN+v1/block-v1:IBMSkillsNetwork+GPXX03NIEN+v1+type@sequential+block@get_started/block-v1:IBMSkillsNetwork+GPXX03NIEN+v1+type@vertical+block@lets_do_it)
+Lab is done with [LangChain](https://python.langchain.com/docs/introduction/)
+
+### Course Lab
+
+See [RAG course IBM notebook](notebooks/RAG-course-IBM-webdata.ipynb)
