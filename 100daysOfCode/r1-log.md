@@ -1,5 +1,13 @@
 # 100 Days Of Code - Round 1
 
+### Day 8: 2025-05-20
+
+**Today's Progress**: Start a learning path on Cognitive Class: [Mastering RAG: Build Smart, Data-Driven Application](https://cognitiveclass.ai/learn/mastering-rag-build-smart-data-driven-application)
+
+**Thoughts:** I hope I can get some structured information on how to build an AI agents.
+
+**Link to work:** First [course](../docs/learnings/course-ibm-rag.md) completed.
+
 ### Day 7: 2025-05-16
 
 **Today's Progress**: Try to create an agent with [letta](http://letta.com/).
