@@ -1,5 +1,14 @@
 # 100 Days Of Code - Round 1
 
+### Day 9: 2025-05-21
+
+**Today's Progress**: Continue learning path on Cognitive Class: [Mastering RAG: Build Smart, Data-Driven Application](https://cognitiveclass.ai/learn/mastering-rag-build-smart-data-driven-application)
+
+**Thoughts:** I understand RAG better now. I want to build an agent with it.
+
+**Link to work:** Last courses completed. See [RAG IBM courses](../docs/learnings/course-ibm-rag.md)
+
+
 ### Day 8: 2025-05-20
 
 **Today's Progress**: Start a learning path on Cognitive Class: [Mastering RAG: Build Smart, Data-Driven Application](https://cognitiveclass.ai/learn/mastering-rag-build-smart-data-driven-application)
