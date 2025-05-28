@@ -1,5 +1,13 @@
 # 100 Days Of Code - Round 1
 
+### Day 11: 2025-05-27
+
+**Today's Progress**: Continue agents course on Hugging Face.
+
+**Thoughts:** Something new about tools.
+
+**Link to work:** See [Agents Course](../docs/learnings/course-agents.md)
+
 ### Day 10: 2025-05-26
 
 **Today's Progress**: Starting agents course on Hugging Face.
