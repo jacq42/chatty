@@ -1,5 +1,15 @@
 # 100 Days Of Code - Round 1
 
+### Day 12: 2025-06-05
+
+**Today's Progress**: Spring-Boot with Spring-AI and AWS Bedrock
+
+**Thoughts:** It works!
+
+**Link to work:** See src directory in this repo. To start you have to set AWS credentials as environment variables.
+
+---
+
 ### Day 11: 2025-05-27
 
 **Today's Progress**: Continue agents course on Hugging Face.
@@ -7,6 +17,8 @@
 **Thoughts:** Something new about tools.
 
 **Link to work:** See [Agents Course](../docs/learnings/course-agents.md)
+
+--- 
 
 ### Day 10: 2025-05-26
 
@@ -16,6 +28,8 @@
 
 **Link to work:** See [Agents Course](../docs/learnings/course-agents.md)
 
+---
+
 ### Day 9: 2025-05-21
 
 **Today's Progress**: Continue learning path on Cognitive Class: [Mastering RAG: Build Smart, Data-Driven Application](https://cognitiveclass.ai/learn/mastering-rag-build-smart-data-driven-application)
@@ -23,6 +37,8 @@
 **Thoughts:** I understand RAG better now. I want to build an agent with it.
 
 **Link to work:** Last courses completed. See [RAG IBM courses](../docs/learnings/course-ibm-rag.md)
+
+---
 
 ### Day 8: 2025-05-20
 
@@ -32,6 +48,8 @@
 
 **Link to work:** Four courses completed. See [RAG IBM courses](../docs/learnings/course-ibm-rag.md)
 
+---
+
 ### Day 7: 2025-05-16
 
 **Today's Progress**: Try to create an agent with [letta](http://letta.com/).
@@ -39,6 +57,8 @@
 **Thoughts:** New platform, new possibilities, new challenges.
 
 **Link to work:** letta-test repo locally
+
+---
 
 ### Day 6: 2025-05-14
 
@@ -48,6 +68,8 @@
 
 **Link to work:** [Course LLM](../docs/learnings/course-llm.md) in this repo
 
+---
+
 ### Day 5: 2025-05-13
 
 **Today's Progress**: Get the Voice Agent working with AWS Bedrock.
@@ -55,6 +77,8 @@
 **Thoughts:** Policies are "great".
 
 **Link to work:** [Jupyter book Live Kit Agent Demo](../docs/learnings/notebooks/LiveKitAgentDemo.ipynb) in this repo
+
+---
 
 ### Day 4: 2025-05-10
 
@@ -64,6 +88,8 @@
 
 **Link to work:** [Jupyter book AI Voice Agent](../docs/learnings/notebooks/DeepLearingAI-Voice-Agent-Lesson4.ipynb) in this repo
 
+---
+
 ### Day 3: 2025-05-09
 
 **Today's Progress**: AI Voice Agent course from [Deeplearning.ai](https://learn.deeplearning.ai/courses/building-ai-voice-agents-for-production/) 
@@ -71,6 +97,8 @@
 **Thoughts:** Data from course and data from LiveKit API differs. How to find open source alternatives?
 
 **Link to work:** [Course AI Voice Agent](../docs/learnings/course-ai-voice-agent.md) in this repo
+
+---
 
 ### Day 3: 2025-05-08
 
@@ -80,6 +108,8 @@
 
 **Link to work:** -
 
+---
+
 ### Day 2: 2025-05-07
 
 **Today's Progress**: Learn about transformers in hugging face.
@@ -87,6 +117,8 @@
 **Thoughts:** Very complex at the beginning.
 
 **Link to work:** [Course LLM](../docs/learnings/course-llm.md) in this repo
+
+---
 
 ### Day 1: 2025-05-06
 

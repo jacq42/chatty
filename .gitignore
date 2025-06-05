@@ -4,6 +4,10 @@
 # IDEs
 /.idea/
 
+# Builds
+/build/
+.gradle/
+
 # Log file
 *.log
 
@@ -31,3 +35,8 @@ replay_pid*
 
 # Jupiter
 .ipynb_checkpoints/
+
+# asdf
+/.tool-versions
+
+
