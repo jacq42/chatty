@@ -1,5 +1,16 @@
 # 100 Days Of Code - Round 1
 
+
+### Day 12: 2025-06-10
+
+**Today's Progress**: Databrick Course
+
+**Thoughts:** Another platform to know.
+
+**Link to work:** See [Course Databricks](../docs/learnings/course-databricks.md)
+
+---
+
 ### Day 12: 2025-06-05
 
 **Today's Progress**: Spring-Boot with Spring-AI and AWS Bedrock
