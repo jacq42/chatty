@@ -1,7 +1,16 @@
 # 100 Days Of Code - Round 1
 
+### Day 14: 2025-07-01
 
-### Day 12: 2025-06-10
+**Today's Progress**: Updated Spring AI project with OpenAI transcription.
+
+**Thoughts:** Why do I need a paid plan for OpenAI just for testing?
+
+**Link to work:** See [Spring AI notes](../docs/learnings/spring-ai.md)
+
+---
+
+### Day 13: 2025-06-10
 
 **Today's Progress**: Databrick Course
 
@@ -13,7 +22,7 @@
 
 ### Day 12: 2025-06-05
 
-**Today's Progress**: Spring-Boot with Spring-AI and AWS Bedrock
+**Today's Progress**: Started a Spring-Boot-Application with Spring-AI and AWS Bedrock
 
 **Thoughts:** It works!
 
@@ -23,7 +32,7 @@
 
 ### Day 11: 2025-05-27
 
-**Today's Progress**: Continue agents course on Hugging Face.
+**Today's Progress**: Continued agents course on Hugging Face.
 
 **Thoughts:** Something new about tools.
 
@@ -33,7 +42,7 @@
 
 ### Day 10: 2025-05-26
 
-**Today's Progress**: Starting agents course on Hugging Face.
+**Today's Progress**: Started agents course on Hugging Face.
 
 **Thoughts:** Nothing new until now.
 
@@ -43,7 +52,7 @@
 
 ### Day 9: 2025-05-21
 
-**Today's Progress**: Continue learning path on Cognitive Class: [Mastering RAG: Build Smart, Data-Driven Application](https://cognitiveclass.ai/learn/mastering-rag-build-smart-data-driven-application)
+**Today's Progress**: Continued learning path on Cognitive Class: [Mastering RAG: Build Smart, Data-Driven Application](https://cognitiveclass.ai/learn/mastering-rag-build-smart-data-driven-application)
 
 **Thoughts:** I understand RAG better now. I want to build an agent with it.
 
@@ -53,7 +62,7 @@
 
 ### Day 8: 2025-05-20
 
-**Today's Progress**: Start a learning path on Cognitive Class: [Mastering RAG: Build Smart, Data-Driven Application](https://cognitiveclass.ai/learn/mastering-rag-build-smart-data-driven-application)
+**Today's Progress**: Started a learning path on Cognitive Class: [Mastering RAG: Build Smart, Data-Driven Application](https://cognitiveclass.ai/learn/mastering-rag-build-smart-data-driven-application)
 
 **Thoughts:** I hope I can get some structured information on how to build an AI agents.
 
@@ -63,7 +72,7 @@
 
 ### Day 7: 2025-05-16
 
-**Today's Progress**: Try to create an agent with [letta](http://letta.com/).
+**Today's Progress**: Tried to create an agent with [letta](http://letta.com/).
 
 **Thoughts:** New platform, new possibilities, new challenges.
 
@@ -73,7 +82,7 @@
 
 ### Day 6: 2025-05-14
 
-**Today's Progress**: Continue with hugging face course.
+**Today's Progress**: Continued with hugging face course.
 
 **Thoughts:** All new stuff.
 
@@ -83,7 +92,7 @@
 
 ### Day 5: 2025-05-13
 
-**Today's Progress**: Get the Voice Agent working with AWS Bedrock.
+**Today's Progress**: Got the Voice Agent working with AWS Bedrock.
 
 **Thoughts:** Policies are "great".
 
@@ -93,7 +102,7 @@
 
 ### Day 4: 2025-05-10
 
-**Today's Progress**: Try to find open source alternatives for SST component.
+**Today's Progress**: Tried to find open source alternatives for SST component.
 
 **Thoughts:** Hard to find. It doesn't work out of the box.
 
@@ -105,7 +114,7 @@
 
 **Today's Progress**: AI Voice Agent course from [Deeplearning.ai](https://learn.deeplearning.ai/courses/building-ai-voice-agents-for-production/) 
 
-**Thoughts:** Data from course and data from LiveKit API differs. How to find open source alternatives?
+**Thoughts:** Data from course and data from LiveKit API differ. How to find open source alternatives?
 
 **Link to work:** [Course AI Voice Agent](../docs/learnings/course-ai-voice-agent.md) in this repo
 
@@ -123,7 +132,7 @@
 
 ### Day 2: 2025-05-07
 
-**Today's Progress**: Learn about transformers in hugging face.
+**Today's Progress**: Learned about transformers in hugging face.
 
 **Thoughts:** Very complex at the beginning.
 
@@ -133,7 +142,7 @@
 
 ### Day 1: 2025-05-06
 
-**Today's Progress**: Start the challenge. Learn about transformers in hugging face.
+**Today's Progress**: Started the challenge. Learned about transformers in hugging face.
 
 **Thoughts:** I want to learn more about AI and how to build a chatbot.
 
