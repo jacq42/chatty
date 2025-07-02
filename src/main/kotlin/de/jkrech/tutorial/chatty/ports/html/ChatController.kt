@@ -27,7 +27,15 @@ class ChatController @Autowired constructor(builder: ChatClient.Builder) {
     private val audioFile: Resource? = null
 
     @GetMapping("/ai/generate")
-    fun generate(@RequestParam(value = "message", defaultValue = "Tell me a fact about the weather") message: String): Mono<Map<String, String>> {
+    fun generate(@RequestParam(value = "message", defaultValue = "Tell me a joke") message: String): Mono<Map<String, String>>   {
+        return chat(message)
+            .map { optionalChatResponse ->
+                mapOf("generation" to (optionalChatResponse ?: ""))
+            }
+    }
+
+    @GetMapping("/ai/generateWithTranscription")
+    fun generateWithTranscription(@RequestParam(value = "message", defaultValue = "Tell me a fact about the weather") message: String): Mono<Map<String, String>> {
         return transcribe()
             .flatMap { optionalTranscription ->
                 chat(optionalTranscription ?: message)

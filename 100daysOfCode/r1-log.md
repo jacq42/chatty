@@ -1,5 +1,15 @@
 # 100 Days Of Code - Round 1
 
+### Day 15: 2025-07-02
+
+**Today's Progress**: Installed and used a local LLM with LM Studio.
+
+**Thoughts:** Local LLMs need a lot of resources. I need to find a good model for my use case.
+
+**Link to work:** See [Lessons learned](../docs/learnings/lessons-learned.md)
+
+---
+
 ### Day 14: 2025-07-01
 
 **Today's Progress**: Updated Spring AI project with OpenAI transcription.
