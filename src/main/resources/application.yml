@@ -1,0 +1,40 @@
+spring:
+  application:
+    name=: chatty
+
+  ai:
+    retry:
+      max-attempts: 5
+      backoff:
+        delay: 2000
+        multiplier: 2
+
+    model:
+      chat: openai # openai, bedrock-converse
+      audio:
+        transcription: openai
+
+    bedrock:
+      aws:
+        region: eu-central-1
+        access-key: ${AWS_ACCESS_KEY_ID}
+        secret-key: ${AWS_SECRET_ACCESS_KEY}
+      converse:
+        chat:
+          options:
+            model: eu.amazon.nova-lite-v1:0
+            temperature: 0.8
+
+    openai:
+      base-url: http://localhost:1234
+      api-key: ${OPENAI_API_KEY}
+      audio:
+        transcription:
+          base-url: https://api.openai.com
+          api-key: ${OPENAI_API_KEY}
+          options:
+            model: whisper-1
+            response-format: json
+      http-client:
+        connect-timeout: 60s
+        read-timeout: 2m
