@@ -1,8 +1,14 @@
 # Spring AI
 
-## Chat with AWS Bedrock
+* [Spring AI reference](https://docs.spring.io/spring-ai/reference/index.html)
+* [Spring AI examples](https://github.com/spring-projects/spring-ai-examples)
 
-TBD
+## Chat
+
+* Configure chat model via properties
+  * See examples for openAI and AWS bedrock in [application.yml](../../src/main/resources/application.yml)
+* Inject ChatClient and call `chatClient.prompt(..)`
+  * See example in [ChatController](../../src/main/kotlin/de/jkrech/tutorial/chatty/ports/html/ChatController.kt)
 
 ## Transcription with OpenAI
 

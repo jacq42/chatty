@@ -1,4 +1,4 @@
-package de.jkrech.tutorial.chatty.ports.html
+package de.jkrech.tutorial.chatty.ports.rest
 
 import org.springframework.ai.audio.transcription.AudioTranscriptionPrompt
 import org.springframework.ai.chat.client.ChatClient
@@ -42,6 +42,9 @@ class ChatController @Autowired constructor(builder: ChatClient.Builder) {
             }
             .map { optionalChatResponse ->
                 mapOf("generation" to (optionalChatResponse ?: ""))
+            }
+            .doOnError {
+                throw ChatControllerException("Could not generate response", it.cause)
             }
     }
 

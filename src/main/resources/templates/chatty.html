@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatty</title>
+    <meta charset="UTF-8">
+    <script>
+        let mediaRecorder;
+        let audioChunks = [];
+
+        function startRecording() {
+            document.getElementById('startButton').disabled = true;
+            document.getElementById('stopButton').disabled = false;
+            document.getElementById('status').textContent = 'Aufnahme läuft...';
+
+            navigator.mediaDevices.getUserMedia({ audio: true })
+                .then(stream => {
+                    mediaRecorder = new MediaRecorder(stream);
+                    mediaRecorder.start();
+
+                    mediaRecorder.addEventListener("dataavailable", event => {
+                        audioChunks.push(event.data);
+                    });
+                })
+                .catch(e => {
+                    console.error('Fehler bei Mikrofonzugriff:', e);
+                    document.getElementById('status').textContent = 'Fehler: Kein Mikrofonzugriff';
+                });
+        }
+
+        function stopRecording() {
+            document.getElementById('startButton').disabled = false;
+            document.getElementById('stopButton').disabled = true;
+            document.getElementById('status').textContent = 'Aufnahme beendet. Verarbeite...';
+
+            mediaRecorder.stop();
+
+            mediaRecorder.addEventListener("stop", () => {
+                const audioBlob = new Blob(audioChunks, { type: 'audio/webm;codecs=opus' });
+                console.log('Blob Größe:', audioBlob.size);
+                console.log('Blob Typ:', audioBlob.type);
+
+                audioChunks = [];
+
+                const formData = new FormData();
+                formData.append('audioFile', audioBlob, 'recording.webm');
+
+                fetch('/ai/transcribe', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    document.getElementById('result').textContent = data.transcription;
+                    document.getElementById('status').textContent = 'Transkription abgeschlossen';
+                })
+                .catch(error => {
+                    console.error('Fehler:', error);
+                    document.getElementById('status').textContent = 'Fehler bei der Übertragung';
+                });
+
+                // Stream beenden
+                mediaRecorder.stream.getTracks().forEach(track => track.stop());
+            });
+        }
+    </script>
+</head>
+<body>
+<h1>Chatty</h1>
+<button id="startButton" onclick="startRecording()">Start recording</button>
+<button id="stopButton" onclick="stopRecording()" disabled>Stop recording</button>
+<p id="status">Ready...</p>
+<h2>Transcription:</h2>
+<div id="result"></div>
+</body>
+</html>

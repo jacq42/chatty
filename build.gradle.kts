@@ -38,6 +38,9 @@ dependencies {
 	//implementation("org.springframework.ai:spring-ai-starter-model-ollama")
 	implementation("org.springframework.ai:spring-ai-starter-model-openai")
 
+	// html templating
+	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+
 	// testing
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
