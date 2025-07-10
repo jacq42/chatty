@@ -25,8 +25,8 @@ spring:
     model:
       chat: openai # openai, bedrock-converse
       audio:
-        transcription: openai # openai
-        speech: openai # openai
+        transcription: openai # openai, fake
+        speech: openai # openai, fake
 
     bedrock:
       aws:

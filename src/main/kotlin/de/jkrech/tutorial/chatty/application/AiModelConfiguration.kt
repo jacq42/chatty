@@ -1,9 +1,15 @@
 package de.jkrech.tutorial.chatty.application
 
+import de.jkrech.tutorial.chatty.domain.ai.model.FakeSpeechModel
+import de.jkrech.tutorial.chatty.domain.ai.model.FakeTranscriptionModel
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
+import org.springframework.ai.audio.transcription.AudioTranscriptionPrompt
+import org.springframework.ai.audio.transcription.AudioTranscriptionResponse
 import org.springframework.ai.chat.client.ChatClient
 import org.springframework.ai.chat.model.ChatModel
+import org.springframework.ai.model.Model
+import org.springframework.ai.openai.audio.speech.SpeechModel
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.autoconfigure.AutoConfiguration
@@ -57,5 +63,31 @@ class AiModelConfiguration {
 
         return RestClient.builder()
             .requestFactory(requestFactory)
+    }
+
+    @Bean
+    @Primary
+    @ConditionalOnProperty(
+        prefix = "spring.ai.model.audio",
+        name = ["transcription"],
+        havingValue = "fake",
+        matchIfMissing = false
+    )
+    fun fakeTranscriptionModel(): Model<AudioTranscriptionPrompt, AudioTranscriptionResponse> {
+        logger.info("Configured transcription model: Fake")
+        return FakeTranscriptionModel()
+    }
+
+    @Bean
+    @Primary
+    @ConditionalOnProperty(
+        prefix = "spring.ai.model.audio",
+        name = ["speech"],
+        havingValue = "fake",
+        matchIfMissing = false
+    )
+    fun fakeSpeechModel(): SpeechModel  {
+        logger.info("Configured speech model: Fake")
+        return FakeSpeechModel()
     }
 }
