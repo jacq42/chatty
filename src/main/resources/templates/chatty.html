@@ -44,7 +44,7 @@
                 const formData = new FormData();
                 formData.append('audioFile', audioBlob, 'recording.webm');
 
-                fetch('/ai/transcribe', {
+                fetch('/ai/chat', {
                     method: 'POST',
                     body: formData
                 })
@@ -55,7 +55,7 @@
                     return response.json();
                 })
                 .then(data => {
-                    document.getElementById('result').textContent = data.transcription;
+                    document.getElementById('result').textContent = data.result;
                     document.getElementById('status').textContent = 'Transkription abgeschlossen';
                 })
                 .catch(error => {
