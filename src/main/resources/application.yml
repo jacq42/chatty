@@ -25,7 +25,7 @@ spring:
     model:
       chat: openai # openai, bedrock-converse
       audio:
-        transcription: openai
+        transcription: openai # openai
 
     bedrock:
       aws:

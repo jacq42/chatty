@@ -1,12 +1,8 @@
 package de.jkrech.tutorial.chatty.ports.rest
 
+import de.jkrech.tutorial.chatty.application.TranscriptionService
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
-import org.springframework.ai.audio.transcription.AudioTranscriptionPrompt
-import org.springframework.ai.openai.OpenAiAudioTranscriptionModel
-import org.springframework.ai.openai.OpenAiAudioTranscriptionOptions
-import org.springframework.ai.openai.api.OpenAiAudioApi
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.core.io.FileSystemResource
 import org.springframework.core.io.Resource
 import org.springframework.http.codec.multipart.FilePart
@@ -18,12 +14,11 @@ import reactor.core.scheduler.Schedulers
 import java.io.File
 
 @RestController
-class TranscribeController {
+class TranscribeController(
+    private val transcriptionService: TranscriptionService
+) {
 
     final val logger: Logger = LoggerFactory.getLogger(TranscribeController::class.java)
-
-    @Autowired
-    private var transcriptionModel: OpenAiAudioTranscriptionModel? = null
 
     @PostMapping("/ai/transcribe")
     fun transcribe(@RequestPart("audioFile") audioFile: FilePart): Mono<Map<String, String>> {
@@ -44,17 +39,7 @@ class TranscribeController {
     }
 
     private fun transcribe(audioFile: Resource): Mono<String?> {
-        val transcriptionOptions: OpenAiAudioTranscriptionOptions? = OpenAiAudioTranscriptionOptions.builder()
-            .responseFormat(OpenAiAudioApi.TranscriptResponseFormat.TEXT)
-            .temperature(0f)
-            .build()
-        val transcriptionRequest = AudioTranscriptionPrompt(
-            audioFile,
-            transcriptionOptions
-        )
-        return Mono.fromCallable { transcriptionModel?.call(transcriptionRequest)?.result?.output }
-            // boundedElastic scheduler lets run blocking calls in a separate thread pool
+        return Mono.fromCallable { transcriptionService.transcribe(audioFile) }
             .subscribeOn(Schedulers.boundedElastic())
-
     }
 }
