@@ -15,9 +15,9 @@ import org.springframework.web.client.RestClient
 import java.time.Duration
 
 @AutoConfiguration(beforeName = ["org.springframework.ai.model.chat.client.autoconfigure.ChatClientAutoConfiguration"])
-class ChatModelConfiguration {
+class AiModelConfiguration {
 
-    final val logger: Logger = LoggerFactory.getLogger(ChatModelConfiguration::class.java)
+    final val logger: Logger = LoggerFactory.getLogger(AiModelConfiguration::class.java)
 
     @Bean
     @Primary

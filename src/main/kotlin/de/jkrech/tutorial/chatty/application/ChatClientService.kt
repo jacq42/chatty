@@ -9,8 +9,8 @@ class ChatClientService (builder: ChatClient.Builder) {
 
     private val chatClient: ChatClient = builder.build()
 
-    fun generate(message: String): String? {
-        return chatClient.prompt(message).call().content()
+    fun generate(message: String): String {
+        return chatClient.prompt(message).call().content() ?: ""
     }
 
     fun generateStream(message: String): Flux<String> {

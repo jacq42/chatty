@@ -26,6 +26,7 @@ spring:
       chat: openai # openai, bedrock-converse
       audio:
         transcription: openai # openai
+        speech: openai # openai
 
     bedrock:
       aws:
@@ -48,6 +49,14 @@ spring:
           options:
             model: whisper-1
             response-format: json
+        speech:
+          base-url: https://api.openai.com
+          api-key: ${OPENAI_API_KEY}
+          options:
+            model: tts-1
+            voice: alloy
+            response-format: mp3
+            speed: 1.0
       http-client:
         connect-timeout: 60s
         read-timeout: 2m

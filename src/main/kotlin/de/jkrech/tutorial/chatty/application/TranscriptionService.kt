@@ -11,8 +11,12 @@ import org.springframework.stereotype.Service
 class TranscriptionService(
     private val transcriptionModel: OpenAiAudioTranscriptionModel
 ) {
+    private val useFakeData = true
 
-    fun transcribe(audioFile: Resource): String? {
+    fun transcribe(audioFile: Resource): String {
+        if (useFakeData) {
+            return "Tell me a joke"
+        }
         val transcriptionOptions: OpenAiAudioTranscriptionOptions? = OpenAiAudioTranscriptionOptions.builder()
             .responseFormat(OpenAiAudioApi.TranscriptResponseFormat.TEXT)
             .temperature(0f)
