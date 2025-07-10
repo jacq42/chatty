@@ -1,5 +1,6 @@
 package de.jkrech.tutorial.chatty.ports.rest
 
+import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.ai.audio.transcription.AudioTranscriptionPrompt
 import org.springframework.ai.openai.OpenAiAudioTranscriptionModel
@@ -19,7 +20,7 @@ import java.io.File
 @RestController
 class TranscribeController {
 
-    final val logger = LoggerFactory.getLogger(TranscribeController::class.java)
+    final val logger: Logger = LoggerFactory.getLogger(TranscribeController::class.java)
 
     @Autowired
     private var transcriptionModel: OpenAiAudioTranscriptionModel? = null
@@ -37,7 +38,7 @@ class TranscribeController {
                 }
                 .doFinally { tempFile.delete() }
         } catch (exc: Exception) {
-            logger.error("Fehler bei der Verarbeitung der Audio-Datei: ${exc.message}")
+            logger.error("Error with transcription of audio file: ${exc.message}")
             Mono.error(exc)
         }
     }

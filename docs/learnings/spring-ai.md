@@ -7,8 +7,10 @@
 
 * Configure chat model via properties
   * See examples for openAI and AWS bedrock in [application.yml](../../src/main/resources/application.yml)
-* Inject ChatClient and call `chatClient.prompt(..)`
-  * See example in [ChatController](../../src/main/kotlin/de/jkrech/tutorial/chatty/ports/html/ChatController.kt)
+* There is an auto configuration for the chat model, that depends on the properties.
+  * See [ChatModelConfiguration](../../src/main/kotlin/de/jkrech/tutorial/chatty/application/ChatModelConfiguration.kt)
+* Use of the chat model with 
+  * See example in [ChatController](../../src/main/kotlin/de/jkrech/tutorial/chatty/ports/rest/ChatController.kt)
 
 ## Transcription with OpenAI
 
@@ -18,4 +20,9 @@
 
 ## Run locally
 
-add as environment variables: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION, OPENAI_API_KEY
+1. Add environment variables: 
+   * AWS_ACCESS_KEY_ID
+   * AWS_SECRET_ACCESS_KEY
+   * AWS_REGION
+   * OPENAI_API_KEY
+2. Run the application with `./gradlew bootRun`
