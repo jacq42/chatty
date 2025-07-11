@@ -1,6 +1,6 @@
-package de.jkrech.tutorial.chatty.ports.rest
+package de.jkrech.tutorial.chatty.ports.rest.exceptions
 
-class VocabTrainerControllerException: RuntimeException {
+class ChatControllerException: RuntimeException {
     constructor(message: String) : super(message)
     constructor(message: String, cause: Throwable?) : super(message, cause)
 }

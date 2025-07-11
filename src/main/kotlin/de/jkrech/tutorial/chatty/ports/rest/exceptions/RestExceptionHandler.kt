@@ -1,4 +1,4 @@
-package de.jkrech.tutorial.chatty.ports.rest
+package de.jkrech.tutorial.chatty.ports.rest.exceptions
 
 import org.springframework.http.HttpStatus
 import org.springframework.http.ProblemDetail

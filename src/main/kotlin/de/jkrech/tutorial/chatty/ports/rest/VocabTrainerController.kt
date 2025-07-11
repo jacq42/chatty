@@ -1,6 +1,7 @@
 package de.jkrech.tutorial.chatty.ports.rest
 
 import de.jkrech.tutorial.chatty.application.vocab.VocabTrainerService
+import de.jkrech.tutorial.chatty.ports.rest.exceptions.VocabTrainerControllerException
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestPart
 import org.springframework.web.bind.annotation.RestController

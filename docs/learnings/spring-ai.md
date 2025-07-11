@@ -18,6 +18,12 @@
 * Current error: 429: You exceeded your current quota, please check your plan and billing details.
 * Next step: Billing plan for OpenAI
 
+## Text-to-Speech with OpenAI
+
+* [Documentation](https://docs.spring.io/spring-ai/reference/api/audio/speech/openai-speech.html)
+* Current error: 429: You exceeded your current quota, please check your plan and billing details.
+* Next step: Billing plan for OpenAI
+
 ## Run locally
 
 1. Add environment variables: 
@@ -26,3 +32,8 @@
    * AWS_REGION
    * OPENAI_API_KEY
 2. Run the application with `./gradlew bootRun`
+
+## Architecture
+
+* use hexagonal architecture
+* 
