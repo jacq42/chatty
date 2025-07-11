@@ -8,6 +8,8 @@ import org.springframework.ai.audio.transcription.AudioTranscriptionPrompt
 import org.springframework.ai.audio.transcription.AudioTranscriptionResponse
 import org.springframework.ai.bedrock.converse.BedrockProxyChatModel
 import org.springframework.ai.chat.client.ChatClient
+import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor
+import org.springframework.ai.chat.memory.ChatMemory
 import org.springframework.ai.model.Model
 import org.springframework.ai.openai.OpenAiChatModel
 import org.springframework.ai.openai.audio.speech.SpeechModel
@@ -20,11 +22,10 @@ import org.springframework.http.client.SimpleClientHttpRequestFactory
 import org.springframework.web.client.RestClient
 import java.time.Duration
 
-
 @AutoConfiguration(beforeName = ["org.springframework.ai.model.chat.client.autoconfigure.ChatClientAutoConfiguration"])
-class AiModelConfiguration {
+class ModelConfiguration {
 
-    final val logger: Logger = LoggerFactory.getLogger(AiModelConfiguration::class.java)
+    final val logger: Logger = LoggerFactory.getLogger(ModelConfiguration::class.java)
 
     @Bean
     fun openAiChatClient(chatModel: OpenAiChatModel): ChatClient {
@@ -36,31 +37,12 @@ class AiModelConfiguration {
         return ChatClient.create(chatModel)
     }
 
-//    @Bean
-//    @Primary
-//    @ConditionalOnProperty(
-//        prefix = "spring.ai.model",
-//        name = ["chat"],
-//        havingValue = "openai",
-//        matchIfMissing = false
-//    )
-//    fun openAiChatClientBuilder(@Qualifier("openAiChatModel") chatModel: ChatModel): ChatClient.Builder {
-//        logger.info("Configured chat model: openAI")
-//        return ChatClient.builder(chatModel)
-//    }
-//
-//    @Bean
-//    @Primary
-//    @ConditionalOnProperty(
-//        prefix = "spring.ai.model",
-//        name = ["chat"],
-//        havingValue = "bedrock-converse",
-//        matchIfMissing = false
-//    )
-//    fun bedrockChatClientBuilder(@Qualifier("bedrockProxyChatModel") chatModel: ChatModel): ChatClient.Builder {
-//        logger.info("Configured chat model: AWS bedrock converse")
-//        return ChatClient.builder(chatModel)
-//    }
+    @Bean
+    fun bedrockConverseChatClientWithMemory(chatModel: BedrockProxyChatModel, chatMemory: ChatMemory): ChatClient {
+        return ChatClient.builder(chatModel)
+            .defaultAdvisors(MessageChatMemoryAdvisor.builder(chatMemory).build())
+            .build();
+    }
 
     @Bean
     fun restClientBuilder(

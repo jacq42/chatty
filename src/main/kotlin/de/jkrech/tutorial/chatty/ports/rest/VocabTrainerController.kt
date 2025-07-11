@@ -16,12 +16,13 @@ class VocabTrainerController (
 ) {
 
     @PostMapping("/ai/vocab/start")
-    fun startVocab(
+    fun startSession(
         @RequestPart(value = "username") username: String
     ): Mono<Map<String, String>>   {
-        return startToTrain(username)
+        return Mono.fromCallable { vocabTrainerService.startSession(username) }
+            .subscribeOn(Schedulers.boundedElastic())
             .map { optionalChatResponse ->
-                mapOf("result" to (optionalChatResponse ?: ""))
+                mapOf("result" to (optionalChatResponse?.message ?: ""))
             }
             .doOnError(BedrockRuntimeException::class.java) { exception ->
                 if (exception.statusCode() == 403) {
@@ -31,8 +32,20 @@ class VocabTrainerController (
             }
     }
 
-    private fun startToTrain(username: String): Mono<String?> {
-        return Mono.fromCallable { vocabTrainerService.start(username) }
+    @PostMapping("/ai/vocab/continue")
+    fun continueSession(
+        @RequestPart(value = "answer") message: String
+    ): Mono<Map<String, String>>   {
+        return Mono.fromCallable { vocabTrainerService.answer(message) }
             .subscribeOn(Schedulers.boundedElastic())
+            .map { optionalChatResponse ->
+                mapOf("result" to (optionalChatResponse?.message ?: ""))
+            }
+            .doOnError(BedrockRuntimeException::class.java) { exception ->
+                if (exception.statusCode() == 403) {
+                    throw SecurityException(exception.message)
+                }
+                throw VocabTrainerControllerException("Could not continue vocab trainer", exception)
+            }
     }
 }

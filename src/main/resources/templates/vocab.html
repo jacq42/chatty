@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Vokabeltrainer</title>
+    <title>Englisch teacher</title>
     <meta charset="UTF-8">
     <script>
         function start() {
             document.getElementById('startButton').disabled = true;
+            document.getElementById('answerButton').disabled = true;
             document.getElementById('status').textContent = 'Starte Training. Verarbeite...';
 
             const formData = new FormData();
@@ -24,6 +25,36 @@
             .then(data => {
                 document.getElementById('result').textContent = data.result;
                 document.getElementById('status').textContent = 'Warte auf Eingabe...';
+                document.getElementById('answerButton').disabled = false;
+            })
+            .catch(error => {
+                console.error('Fehler:', error);
+                document.getElementById('status').textContent = 'Fehler bei der Übertragung';
+            });
+        }
+
+        function answer() {
+            document.getElementById('startButton').disabled = true;
+            document.getElementById('answerButton').disabled = true;
+            document.getElementById('status').textContent = 'Starte Training. Verarbeite...';
+
+            const formData = new FormData();
+            formData.append('answer', document.getElementById('answer').value);
+
+            fetch('/ai/vocab/continue', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById('result').textContent = data.result;
+                document.getElementById('status').textContent = 'Warte auf Eingabe...';
+                document.getElementById('answerButton').disabled = false;
             })
             .catch(error => {
                 console.error('Fehler:', error);
@@ -33,12 +64,23 @@
     </script>
 </head>
 <body>
-<h1>Vokabeltrainer</h1>
-<label for="username">Benutzername</label>
-<input type="text" id="username" placeholder="Benutzername" required />
-<button id="startButton" onclick="start()">Starten</button>
+<h1>Learning English is fun!</h1>
+<div>
+    <label for="username">What's your name?</label>
+    <input type="text" id="username" placeholder="Benutzername" required />
+    <button id="startButton" onclick="start()">Start</button>
+</div>
 <p id="status">Ready...</p>
-<h2>Antwort:</h2>
-<div id="result"></div>
+<h2>Chat:</h2>
+<div>
+    <div id="result"></div>
+    <br />
+    <label for="answer">Your answer: </label>
+    <input type="text" id="answer" placeholder="Antwort" />
+    <button id="answerButton" onclick="answer()">Answer</button>
+</div>
+
+Auswertung: tbd
+
 </body>
 </html>
