@@ -4,6 +4,7 @@ import de.jkrech.tutorial.chatty.application.ChatClientService
 import de.jkrech.tutorial.chatty.application.SpeechService
 import de.jkrech.tutorial.chatty.application.TranscriptionService
 import de.jkrech.tutorial.chatty.domain.AudioResource
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.core.io.ByteArrayResource
 import org.springframework.core.io.Resource
 import org.springframework.http.HttpHeaders
@@ -20,7 +21,7 @@ import reactor.core.scheduler.Schedulers
 @Suppress("unused")
 class ChatController(
     private val transcriptionService: TranscriptionService,
-    private val chatClientService: ChatClientService,
+    @Qualifier("openAiChatClientService") private val openAiChatClientService: ChatClientService,
     private val speechService: SpeechService
 ) {
 
@@ -40,7 +41,7 @@ class ChatController(
     }
 
     private fun chatClientGenerate(promptMessage: String): String {
-        return chatClientService.generate(promptMessage)
+        return openAiChatClientService.generate(promptMessage)
     }
 
     private fun textToSpeech(promptMessage: String): ByteArray {

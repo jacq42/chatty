@@ -1,5 +1,35 @@
 # 100 Days Of Code - Round 1
 
+### Day 18: 2025-07-11
+
+**Today's Progress**: Implement vocabulary trainer. Use string templates for prompts.
+
+**Thoughts:** Using AI for development is great. ChatGPT and Copilot are my new best buddies.
+
+**Link to work:** See [Spring AI notes](../docs/learnings/spring-ai.md)
+
+---
+
+### Day 17: 2025-07-10
+
+**Today's Progress**: Add Text-To-Speech model to application.
+
+**Thoughts:** Why only OpenAI models? I want to use an open source model or a local model.
+
+**Link to work:** See [Spring AI notes](../docs/learnings/spring-ai.md)
+
+---
+
+### Day 16: 2025-07-03
+
+**Today's Progress**: Add transcription model to application.
+
+**Thoughts:** Why only OpenAI models? I want to use an open source model or a local model.
+
+**Link to work:** See [Spring AI notes](../docs/learnings/spring-ai.md)
+
+---
+
 ### Day 15: 2025-07-02
 
 **Today's Progress**: Installed and used a local LLM with LM Studio.

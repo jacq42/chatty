@@ -5,8 +5,9 @@ Source: [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/
 ## Unit 0
 
 Why do I need [Ollama](https://github.com/ollama/ollama/blob/main/README.md#quickstart)?
+* allows you to run models locally
 
-[Install Ollama](https://huggingface.co/learn/agents-course/unit0/onboarding#step-5-running-models-locally-with-ollama-in-case-you-run-into-credit-limits)
+See also [Tools](lessons-learned.md#local-llms)
 
 ## Unit 1
 

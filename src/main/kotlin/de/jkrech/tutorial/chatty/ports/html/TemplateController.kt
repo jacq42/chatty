@@ -11,4 +11,9 @@ class TemplateController {
     fun showChattyPage(): String {
         return "chatty"
     }
+
+    @GetMapping("/vocab")
+    fun showVocabPage(): String {
+        return "vocab"
+    }
 }

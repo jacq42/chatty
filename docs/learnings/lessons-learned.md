@@ -32,3 +32,7 @@ Links:
 
 Usage:
 - use local llm via openAI API
+
+## Prompt Engineering
+
+See [Prompt Engineering Guide](https://www.promptingguide.ai/introduction/examples.en#conversation)

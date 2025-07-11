@@ -19,11 +19,6 @@ class SpeechService(
         return speechModel.call(speechPrompt).result.output
     }
 
-//    fun speechStream(message: String): Flux<SpeechResponse?>? {
-//        val speechPrompt = SpeechPrompt(message, speechOptions)
-//        return speechModel.stream(speechPrompt)
-//    }
-
     companion object {
         val speechOptions: OpenAiAudioSpeechOptions = OpenAiAudioSpeechOptions.builder()
             .voice(OpenAiAudioApi.SpeechRequest.Voice.ALLOY)

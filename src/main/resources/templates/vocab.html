@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vokabeltrainer</title>
+    <meta charset="UTF-8">
+    <script>
+        function start() {
+            document.getElementById('startButton').disabled = true;
+            document.getElementById('status').textContent = 'Starte Training. Verarbeite...';
+
+            const formData = new FormData();
+            formData.append('username', document.getElementById('username').value);
+
+            fetch('/ai/vocab/start', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById('result').textContent = data.result;
+                document.getElementById('status').textContent = 'Warte auf Eingabe...';
+            })
+            .catch(error => {
+                console.error('Fehler:', error);
+                document.getElementById('status').textContent = 'Fehler bei der Übertragung';
+            });
+        }
+    </script>
+</head>
+<body>
+<h1>Vokabeltrainer</h1>
+<label for="username">Benutzername</label>
+<input type="text" id="username" placeholder="Benutzername" required />
+<button id="startButton" onclick="start()">Starten</button>
+<p id="status">Ready...</p>
+<h2>Antwort:</h2>
+<div id="result"></div>
+</body>
+</html>

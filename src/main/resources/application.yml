@@ -16,6 +16,10 @@ spring:
       max-in-memory-size: 10MB
 
   ai:
+    chat:
+      client:
+        enabled: false # disable auto configuration of chat client
+
     retry:
       max-attempts: 5
       backoff:
@@ -23,10 +27,10 @@ spring:
         multiplier: 2
 
     model:
-      chat: openai # openai, bedrock-converse
+      #chat: openai # openai, bedrock-converse
       audio:
-        transcription: openai # openai, fake
-        speech: openai # openai, fake
+        transcription: fake # openai, fake
+        speech: fake # openai, fake
 
     bedrock:
       aws:
@@ -40,7 +44,7 @@ spring:
             temperature: 0.8
 
     openai:
-      base-url: http://localhost:1234
+      base-url: http://localhost:1234 # local llm
       api-key: ${OPENAI_API_KEY}
       audio:
         transcription:

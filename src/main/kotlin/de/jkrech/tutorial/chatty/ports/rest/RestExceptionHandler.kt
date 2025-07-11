@@ -21,6 +21,15 @@ class RestExceptionHandler {
         )
     }
 
+    @ExceptionHandler(SecurityException::class)
+    fun handleSecurityException(exception: SecurityException): ResponseEntity<*> {
+        return createProblemDetailResponseEntity(
+            httpStatus = HttpStatus.FORBIDDEN,
+            title = "Forbidden",
+            detail = "${exception.message}"
+        )
+    }
+
     @ExceptionHandler(Exception::class)
     fun handleAnyException(exception: Exception): Mono<ResponseEntity<Any>> =
         Mono.defer {

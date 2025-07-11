@@ -1,6 +1,7 @@
 package de.jkrech.tutorial.chatty.ports.rest
 
 import de.jkrech.tutorial.chatty.application.ChatClientService
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
@@ -11,7 +12,7 @@ import reactor.core.scheduler.Schedulers
 @RestController
 @Suppress("unused")
 class GenerateTextController (
-    private val chatClientService: ChatClientService
+    @Qualifier("openAiChatClientService") private val openAiChatClientService: ChatClientService
 ) {
 
     @GetMapping("/ai/generate")
@@ -28,11 +29,11 @@ class GenerateTextController (
     fun generateStream(
         @RequestParam(value = "message", defaultValue = "Tell me a joke") message: String
     ): Flux<String> {
-        return chatClientService.generateStream(message)
+        return openAiChatClientService.generateStream(message)
     }
 
     private fun chatClientGenerate(promptMessage: String): Mono<String?> {
-        return Mono.fromCallable { chatClientService.generate(promptMessage) }
+        return Mono.fromCallable { openAiChatClientService.generate(promptMessage) }
             .subscribeOn(Schedulers.boundedElastic())
     }
 }
