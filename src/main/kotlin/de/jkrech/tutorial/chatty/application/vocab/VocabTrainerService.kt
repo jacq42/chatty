@@ -1,6 +1,5 @@
 package de.jkrech.tutorial.chatty.application.vocab
 
-import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.ai.chat.client.ChatClient
 import org.springframework.ai.chat.messages.Message
 import org.springframework.ai.chat.messages.UserMessage
@@ -15,7 +14,6 @@ import org.springframework.stereotype.Service
 @Service
 class VocabTrainerService(
     @Qualifier("bedrockConverseChatClientWithMemory") private val chatClient: ChatClient,
-    private val objectMapper: ObjectMapper
 ) {
 
     @Value("classpath:/prompts/vocab-trainer-de-to-en.st")

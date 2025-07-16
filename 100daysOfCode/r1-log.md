@@ -1,5 +1,15 @@
 # 100 Days Of Code - Round 1
 
+### Day 18: 2025-07-16
+
+**Today's Progress**: Extend functionality of vocabulary trainer.
+
+**Thoughts:** Finetune structured response.
+
+**Link to work:** See [Spring AI notes](../docs/learnings/spring-ai.md)
+
+---
+
 ### Day 18: 2025-07-11
 
 **Today's Progress**: Implement vocabulary trainer. Use string templates for prompts.

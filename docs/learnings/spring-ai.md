@@ -8,9 +8,16 @@
 * Configure chat model via properties
   * See examples for openAI and AWS bedrock in [application.yml](../../src/main/resources/application.yml)
 * There is an auto configuration for the chat model, that depends on the properties.
-  * See [ChatModelConfiguration](../../src/main/kotlin/de/jkrech/tutorial/chatty/application/ChatModelConfiguration.kt)
+  * See [ModelConfiguration](../../src/main/kotlin/de/jkrech/tutorial/chatty/application/ModelConfiguration.kt)
 * Use of the chat model with 
   * See example in [ChatController](../../src/main/kotlin/de/jkrech/tutorial/chatty/ports/rest/ChatController.kt)
+
+### Chat Memory
+
+* Create configuration for chat memory
+  * See [MemoryConfiguration](../../src/main/kotlin/de/jkrech/tutorial/chatty/application/MemoryConfiguration.kt) 
+* Use the chat memory in the chat model
+  * See [ModelConfiguration](../../src/main/kotlin/de/jkrech/tutorial/chatty/application/ModelConfiguration.kt)
 
 ## Transcription with OpenAI
 
