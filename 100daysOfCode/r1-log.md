@@ -1,5 +1,15 @@
 # 100 Days Of Code - Round 1
 
+### Day 19: 2025-08-11
+
+**Today's Progress**: Improve vocabulary trainer with more features.
+
+**Thoughts:** You never know the answer of AI chat model. You have to be prepared for everything. It's hard to test.
+
+**Link to work:** See [Spring AI notes](../docs/learnings/spring-ai.md)
+
+---
+
 ### Day 18: 2025-07-16
 
 **Today's Progress**: Extend functionality of vocabulary trainer.
