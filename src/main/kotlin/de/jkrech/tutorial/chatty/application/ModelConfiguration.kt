@@ -33,6 +33,13 @@ class ModelConfiguration {
     }
 
     @Bean
+    fun openAiChatClientWithMemory(chatModel: OpenAiChatModel, chatMemory: ChatMemory): ChatClient {
+        return ChatClient.builder(chatModel)
+            .defaultAdvisors(MessageChatMemoryAdvisor.builder(chatMemory).build())
+            .build();
+    }
+
+    @Bean
     fun bedrockConverseChatClient(chatModel: BedrockProxyChatModel): ChatClient {
         return ChatClient.create(chatModel)
     }

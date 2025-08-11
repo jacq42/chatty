@@ -40,6 +40,7 @@
             document.getElementById('status').textContent = 'Starte Training. Verarbeite...';
 
             const formData = new FormData();
+            formData.append('username', document.getElementById('username').value);
             formData.append('answer', document.getElementById('answer').value);
 
             fetch('/ai/vocab/continue', {

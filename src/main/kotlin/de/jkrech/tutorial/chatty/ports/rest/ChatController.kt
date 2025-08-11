@@ -1,6 +1,6 @@
 package de.jkrech.tutorial.chatty.ports.rest
 
-import de.jkrech.tutorial.chatty.application.ChatClientService
+import de.jkrech.tutorial.chatty.application.chat.ChatClientService
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam

@@ -39,9 +39,10 @@ class VocabTrainerController (
 
     @PostMapping("/ai/vocab/continue")
     fun continueSession(
+        @RequestPart(value = "username") username: String,
         @RequestPart(value = "answer") message: String
     ): Mono<Map<String, String>>   {
-        return Mono.fromCallable { vocabTrainerService.answer(message) }
+        return Mono.fromCallable { vocabTrainerService.answer(username, message) }
             .subscribeOn(Schedulers.boundedElastic())
             .doOnNext(::logResponseFromService)
             .map(::mapResult)
@@ -56,7 +57,7 @@ class VocabTrainerController (
     private fun mapResult(optionalChatResponse: VocabTrainerResponse?): Map<String, String> {
         return mapOf(
                 "result" to optionalChatResponse.messageAndFeedback(),
-                "currentVocab" to optionalChatResponse.currentVocab()
+                "currentVocab" to optionalChatResponse.currentVocab(),
             )
     }
 

@@ -1,4 +1,4 @@
-package de.jkrech.tutorial.chatty.application
+package de.jkrech.tutorial.chatty.application.chat
 
 import reactor.core.publisher.Flux
 

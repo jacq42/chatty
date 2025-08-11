@@ -11,5 +11,5 @@ fun VocabTrainerResponse?.messageAndFeedback(): String {
 fun VocabTrainerResponse?.currentVocab(): String {
     if (this == null) return ""
 
-    return this.nextWord ?: this.currentWord ?: ""
+    return this.sentence ?: this.currentWord ?: ""
 }

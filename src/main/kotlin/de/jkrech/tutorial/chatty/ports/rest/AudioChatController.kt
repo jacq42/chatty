@@ -1,8 +1,8 @@
 package de.jkrech.tutorial.chatty.ports.rest
 
-import de.jkrech.tutorial.chatty.application.ChatClientService
 import de.jkrech.tutorial.chatty.application.SpeechService
 import de.jkrech.tutorial.chatty.application.TranscriptionService
+import de.jkrech.tutorial.chatty.application.chat.ChatClientService
 import de.jkrech.tutorial.chatty.domain.AudioResource
 import de.jkrech.tutorial.chatty.ports.rest.exceptions.ChatControllerException
 import org.springframework.beans.factory.annotation.Qualifier

@@ -1,4 +1,4 @@
-package de.jkrech.tutorial.chatty.application
+package de.jkrech.tutorial.chatty.application.chat
 
 import org.springframework.ai.chat.client.ChatClient
 import org.springframework.beans.factory.annotation.Qualifier
