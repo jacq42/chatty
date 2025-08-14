@@ -1,5 +1,15 @@
 # 100 Days Of Code - Round 1
 
+### Day 20: 2025-08-14
+
+**Today's Progress**: Created a learning path for learning AI with Claude.ai.
+
+**Thoughts:** Chatbots can create a learning path, but you always have to check the content. When they say, that it's free, it mustn't be true.
+
+**Link to work:** See [Learing AI with AI](https://github.com/jacq42/learning-ai-with-ai)
+
+---
+
 ### Day 19: 2025-08-11
 
 **Today's Progress**: Improve vocabulary trainer with more features.
