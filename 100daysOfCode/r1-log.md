@@ -1,12 +1,32 @@
 # 100 Days Of Code - Round 1
 
+### Day 22: 2025-08-18
+
+**Today's Progress**: Followed the learning path.
+
+**Thoughts:** CoPilot is a great help for learning Python.
+
+**Link to work:** See [Learning AI with AI](https://github.com/jacq42/learning-ai-with-ai)
+
+---
+
+### Day 21: 2025-08-15
+
+**Today's Progress**: Followed the learning path.
+
+**Thoughts:** Need to practice more Python. 
+
+**Link to work:** See [Learning AI with AI](https://github.com/jacq42/learning-ai-with-ai)
+
+---
+
 ### Day 20: 2025-08-14
 
 **Today's Progress**: Created a learning path for learning AI with Claude.ai.
 
 **Thoughts:** Chatbots can create a learning path, but you always have to check the content. When they say, that it's free, it mustn't be true.
 
-**Link to work:** See [Learing AI with AI](https://github.com/jacq42/learning-ai-with-ai)
+**Link to work:** See [Learning AI with AI](https://github.com/jacq42/learning-ai-with-ai)
 
 ---
 
