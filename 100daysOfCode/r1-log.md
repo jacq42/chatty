@@ -1,5 +1,15 @@
 # 100 Days Of Code - Round 1
 
+### Day 23: 2025-08-19
+
+**Today's Progress**: Followed the learning path.
+
+**Thoughts:** CoPilot can first explain and then do all of my tasks. Do I really learn this way?
+
+**Link to work:** See [Learning AI with AI](https://github.com/jacq42/learning-ai-with-ai)
+
+---
+
 ### Day 22: 2025-08-18
 
 **Today's Progress**: Followed the learning path.
