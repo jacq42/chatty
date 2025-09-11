@@ -1,5 +1,25 @@
 # 100 Days Of Code - Round 1
 
+### Day 25: 2025-09-10
+
+**Today's Progress**: Extended the project radar.
+
+**Thoughts:** Restructuring an existing project is always a challenge.
+
+**Link to work:** See [Project Radar](https://github.com/jacq42/project-radar)
+
+---
+
+### Day 24: 2025-09-10
+
+**Today's Progress**: Followed the learning path.
+
+**Thoughts:** -
+
+**Link to work:** See [Learning AI with AI](https://github.com/jacq42/learning-ai-with-ai)
+
+---
+
 ### Day 23: 2025-08-19
 
 **Today's Progress**: Followed the learning path.
