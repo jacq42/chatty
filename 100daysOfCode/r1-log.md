@@ -1,6 +1,16 @@
 # 100 Days Of Code - Round 1
 
-### Day 25: 2025-09-10
+### Day 26: 2025-09-12
+
+**Today's Progress**: Integrated MCP server and client into project radar.
+
+**Thoughts:** Integration is easy with SpringAI. Just a bit more example will be helpful.
+
+**Link to work:** See [Project Radar](https://github.com/jacq42/project-radar)
+
+---
+
+### Day 25: 2025-09-11
 
 **Today's Progress**: Extended the project radar.
 
