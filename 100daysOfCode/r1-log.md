@@ -1,5 +1,15 @@
 # 100 Days Of Code - Round 1
 
+### Day 27: 2025-09-15
+
+**Today's Progress**: Integrated MCP server and client into project radar.
+
+**Thoughts:** Did not understand MCP completely. Need to read more.
+
+**Link to work:** See [Project Radar](https://github.com/jacq42/project-radar)
+
+---
+
 ### Day 26: 2025-09-12
 
 **Today's Progress**: Integrated MCP server and client into project radar.
