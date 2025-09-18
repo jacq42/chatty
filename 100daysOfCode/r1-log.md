@@ -1,5 +1,25 @@
 # 100 Days Of Code - Round 1
 
+### Day 29: 2025-09-17
+
+**Today's Progress**: Integrated Email importer into project radar.
+
+**Thoughts:** Is getting smoothly. Need to test more.
+
+**Link to work:** See [Project Radar](https://github.com/jacq42/project-radar)
+
+---
+
+### Day 28: 2025-09-16
+
+**Today's Progress**: Fix communication between server and api.
+
+**Thoughts:** MVP is nearly done. Feels good.
+
+**Link to work:** See [Project Radar](https://github.com/jacq42/project-radar)
+
+---
+
 ### Day 27: 2025-09-15
 
 **Today's Progress**: Integrated MCP server and client into project radar.
