@@ -1,5 +1,25 @@
 # 100 Days Of Code - Round 1
 
+### Day 31: 2025-09-19
+
+**Today's Progress**: Integrated IMAP importer into project radar.
+
+**Thoughts:** I use it already for a few days. Works fine.
+
+**Link to work:** See [Project Radar](https://github.com/jacq42/project-radar)
+
+---
+
+### Day 30: 2025-09-18
+
+**Today's Progress**: Followed the learning path.
+
+**Thoughts:** Want to speed up learning. How to do?
+
+**Link to work:** See [Learning AI with AI](https://github.com/jacq42/learning-ai-with-ai)
+
+---
+
 ### Day 29: 2025-09-17
 
 **Today's Progress**: Integrated Email importer into project radar.
