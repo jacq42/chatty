@@ -2,6 +2,26 @@
 
 ### Day 31: 2025-09-19
 
+**Today's Progress**: KI-Campus Course "AICE your exams"
+
+**Thoughts:** Testet Copilot, Gemini and Poe.com. Got new concept for chatty app. Need more testing of bots in poe.com.
+
+**Link to work:** See [KI Campus](https://ki-campus.org/)
+
+---
+
+### Day 32: 2025-09-22
+
+**Today's Progress**: KI-Campus Course "AICE your exams"
+
+**Thoughts:** Lots of basic information. Something new for me. 
+
+**Link to work:** See [KI Campus](https://ki-campus.org/)
+
+---
+
+### Day 31: 2025-09-19
+
 **Today's Progress**: Integrated IMAP importer into project radar.
 
 **Thoughts:** I use it already for a few days. Works fine.
