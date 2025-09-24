@@ -8,9 +8,13 @@ The bot is using AI to generate responses. It uses the vocabularies and grammar 
 
 ## Purpose
 
-Chatty is an english speaking chatbot. 
+~~Chatty is an english speaking chatbot.~~
+
+The purpose is to practice english skills with a gaming app.
 
 ## Components
+
+### Chatbot
 
 * Voice Interface: frontend to communicate with the assistant 
 * -> STT (Speech to Text): converts audio to text

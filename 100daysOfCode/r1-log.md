@@ -1,6 +1,16 @@
 # 100 Days Of Code - Round 1
 
-### Day 31: 2025-09-19
+### Day 34: 2025-09-24
+
+**Today's Progress**: Needed to update project radar.
+
+**Thoughts:** A web agent could be a better idea than scraping emails. Keep it in mind for later.
+
+**Link to work:** See [Project Radar](https://github.com/jacq42/project-radar)
+
+---
+
+### Day 33: 2025-09-23
 
 **Today's Progress**: KI-Campus Course "AICE your exams"
 

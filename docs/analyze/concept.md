@@ -28,7 +28,7 @@
 - Personalisierte Empfehlungen basierend auf Fehleranalyse
 - Avatare zur Personalisierung
 - Belohnungssystem (Ausstattung der Avatare, neue Fähigkeiten)
-
+- Analyse & Empfehlungen für individuelles Lernen
 
 ### Bedienung
 
@@ -42,7 +42,9 @@
 ## Gameplay
 
 - Agenten, die in unterschiedlichen Städten Missionen erfüllen müssen
+- Lernende können Missionen selbst auswählen (selbstbestimmtes Lernen)
 - Für jede erfolgreiche Mission gibt es Belohnungen (neue Kleidung, Fähigkeiten, Orte)
+- Logbuch mit Fortschrittsanzeige (Level, XP, Abzeichen) und bereits gelernter Vokabeln, Grammatikregeln
 
 ## Missionen
 
@@ -86,6 +88,17 @@ TBD
 - Anpassung an verschiedene Lehrpläne?
 - Anpassung an verschiedene Lernniveaus?
 - Offline-Modus für Übungen?
+
+## MVP
+
+- Startbildschirm mit Avatar und Fortschrittsanzeige
+- Auswahl von Missionen
+- Missionen:
+  - Vokabeltraining
+  - Hörverstehen (Audio + Multiple Choice)
+- Avatar
+- Fortschrittsanzeige (Level, XP, Abzeichen)
+- Angepasst an aktuelles Lehrbuch Klasse 7
 
 
 
