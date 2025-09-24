@@ -32,6 +32,19 @@
 
 ---
 
+#### Adaptives Lernen
+
+| Baustein | Didaktische Funktion | Beispiel |
+|----------|----------------------|----------|
+| Einstufungstest | Lernstand erfassen | Kurze Übungen zu Wortschatz, Grammatik, Hörverstehen |
+| Fehleranalyse | Schwächen erkennen | „He go" → gezielte Übung zu „he/she + -s" |
+| Aufgabenvariation | Lernstil berücksichtigen | Visuelle vs. auditive vs. interaktive Formate |
+| Progressionslogik | Motivation & Herausforderung | Leichte Aufgaben → mittlere → komplexe Missionen |
+| Selbstreflexion | Metakognition fördern | Emoji-Feedback + Text: „Was war leicht/schwer?" |
+| Lehrersteuerung | Pädagogische Kontrolle | Lehrkraft kann Level manuell setzen oder Aufgaben zuweisen |
+
+---
+
 ### 🔐 **Technische Merkmale**
 
 - Plattform: iOS, Android, Web
@@ -124,10 +137,6 @@
 ---
 
 ## UI/UX design
-
-Kein Problem, Jacqueline — du brauchst keine Vorkenntnisse im Grafikdesign, um visuell beeindruckende Inhalte für deine App zu erstellen. Hier sind drei einfache Wege, wie du das angehen kannst, je nachdem wie viel Kontrolle du haben möchtest:
-
----
 
 ### 🧩 **1. KI-gestützte Bildgeneratoren (Einsteigerfreundlich)**
 Du gibst einfach eine Beschreibung ein, und die KI erstellt ein Bild für dich.

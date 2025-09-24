@@ -52,17 +52,34 @@
 - Wortschatz, Hörverstehen, Sprechen
 - Ein Thema pro Mission (z.B. Essen bestellen, Wegbeschreibung, Einkaufen)
 - Schwierigkeit passt sich dem Lernstand an (differenziertes Lernen)
+- Missionen werden freigeschaltet, wenn X % der benötigten Vokabeln gelernt wurden mit täglichen Trainingseinheiten
 
 ### Aufbau einer Mission
 
 1. Intro-Szene: Mission wird vorgestellt (kurze Comic-Sequenz mit Voice-over)
-2. Vokabeltraining: verschiedene Übungen (Bilder, Audio, Kontext)
-3. Hörverstehen: kurze Dialoge oder Monologe zum Thema (Frage = Audio, Antwort = Multiple Choice)
-4. Grammatikspiel: Minispiele zu relevanten Grammatikthemen
-5. Dialog-Simulation: Sprechübung mit KI-Spracherkennung (Mikrofon)
-6. Gruppen-Challenge: Gemeinsames Ziel mit der Klasse (z.B. 1000 neue Wörter bis Freitag)
-7. Reflexion: Kurze Selbstreflexion über das Gelernte (Was gelernt, was schwer, was leicht? als kurze Umfrage mit Emojis)
-8. Belohnung: Neue Kleidung, Fähigkeiten oder Orte für den Avatar
+2. Einstufungstest: kurze Übungen zu Wortschatz, Grammatik, Hörverstehen, Sprechen (5-10 Fragen)
+3. Vokabeltraining: verschiedene Übungen (Bilder, Audio, Kontext)
+4. Hörverstehen: kurze Dialoge oder Monologe zum Thema (Frage = Audio, Antwort = Multiple Choice)
+5. Grammatikspiel: Minispiele zu relevanten Grammatikthemen
+6. Dialog-Simulation: Sprechübung mit KI-Spracherkennung (Mikrofon)
+7. Gruppen-Challenge: Gemeinsames Ziel mit der Klasse (z.B. 1000 neue Wörter bis Freitag)
+8. Reflexion: Kurze Selbstreflexion über das Gelernte (Was gelernt, was schwer, was leicht? als kurze Umfrage mit Emojis)
+9. Belohnung: Neue Kleidung, Fähigkeiten oder Orte für den Avatar
+
+### Mission Berlin - Einladung zur Party
+
+- Welche Partys gibt es für Agenten?
+- Minispiele:
+  - Einladung schreiben (Lückentext)
+  - Dialogsimulation: Gespräch mit Freund:in über Party (Mikrofon)
+  - Vokabeltraining: ?
+  - Grammatikspiel: ?
+  - Hörverstehen: ?
+- Gruppen-Challenge: 
+  - (Hälfte Klasse) Einladungen schreiben
+  - Einladung der anderen lesen und beantworten
+- Reflexion
+- Belohnung: Party-Outfits für Avatar
 
 ### Mission London - Bestelle dein Lieblingsessen
 
@@ -84,7 +101,9 @@ TBD
 
 ## Offene Fragen
 
-- Wie Spaced Repetition integrieren?
+- Wie Spaced Repetition integrieren? 
+  - Trainingseinheiten für Agenten jeden Tag
+  - Trainingslogbuch mit bisher gelernten Vokabeln
 - Anpassung an verschiedene Lehrpläne?
 - Anpassung an verschiedene Lernniveaus?
 - Offline-Modus für Übungen?
