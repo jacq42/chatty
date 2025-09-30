@@ -1,5 +1,45 @@
 # 100 Days Of Code - Round 1
 
+### Day 40: 2025-09-30
+
+**Today's Progress**: Add REACT frontend to project radar.
+
+**Thoughts:** Now its getting usable.
+
+**Link to work:** See [Project Radar](https://github.com/jacq42/project-radar)
+
+---
+
+### Day 37: 2025-09-29
+
+**Today's Progress**: Add AI matcher to find duplicates via chat model and prompting.
+
+**Thoughts:** Hard to test.
+
+**Link to work:** See [Project Radar](https://github.com/jacq42/project-radar)
+
+---
+
+### Day 36: 2025-09-24
+
+**Today's Progress**: Add skill and project info matcher to find duplicates.
+
+**Thoughts:** Now the real fancy stuff starts.
+
+**Link to work:** See [Project Radar](https://github.com/jacq42/project-radar)
+
+---
+
+### Day 35: 2025-09-25
+
+**Today's Progress**: Add caching to project radar.
+
+**Thoughts:** Faster 
+
+**Link to work:** See [Project Radar](https://github.com/jacq42/project-radar)
+
+--- 
+
 ### Day 34: 2025-09-24
 
 **Today's Progress**: Needed to update project radar.
