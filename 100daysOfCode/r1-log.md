@@ -1,6 +1,26 @@
 # 100 Days Of Code - Round 1
 
-### Day 40: 2025-09-30
+### Day 40: 2025-10-06
+
+**Today's Progress**: Updated concept of AgentX.
+
+**Thoughts:** It's very difficult to create single missions for the game.
+
+**Link to work:** On Miro board.
+
+---
+
+### Day 39: 2025-10-01
+
+**Today's Progress**: Increased frontend functionality of project radar.
+
+**Thoughts:** Now its getting usable.
+
+**Link to work:** See [Project Radar](https://github.com/jacq42/project-radar)
+
+---
+
+### Day 38: 2025-09-30
 
 **Today's Progress**: Add REACT frontend to project radar.
 

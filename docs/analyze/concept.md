@@ -69,6 +69,9 @@
 ### Mission Berlin - Einladung zur Party
 
 - Welche Partys gibt es für Agenten?
+- Intro:
+  - Hauptquartier in Berlin
+  - 2 Agenten treffen sich
 - Minispiele:
   - Einladung schreiben (Lückentext)
   - Dialogsimulation: Gespräch mit Freund:in über Party (Mikrofon)
