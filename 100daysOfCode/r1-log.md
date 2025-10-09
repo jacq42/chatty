@@ -1,5 +1,25 @@
 # 100 Days Of Code - Round 1
 
+### Day 42: 2025-10-09
+
+**Today's Progress**: Fine tune Agent-X app. 
+
+**Thoughts:** Need to do more by myself without AI help to learn more about React.
+
+**Link to work:** See [Agent X](https://github.com/jacq42/agent-x)
+
+---
+
+### Day 41: 2025-10-08
+
+**Today's Progress**: Created React app with Copilot in VSCode.
+
+**Thoughts:** So easy and so fast to create a React app with Copilot.
+
+**Link to work:** See [Agent X](https://github.com/jacq42/agent-x)
+
+---
+
 ### Day 40: 2025-10-06
 
 **Today's Progress**: Updated concept of AgentX.
